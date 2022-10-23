@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/asset/font-awesome.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/asset/login.js"></script>
+    <title>EpicLogin - Login</title>
+</head>
+<body class="bg-gray-100 flex flex-col justify-center text-center items-center align-center h-screen">
+    <h1 class="text-4xl font-extrabold mb-3">Login with EpicGames</h1>
+    <p class="text-sm text-slate-400 mb-10">login with <span class="text-indigo-600 font-semibold">EpicGames</span> to continue...</p>
+
+    <section class="bg-white flex flex-col justify-center text-left shadow shadow-xl rounded-md p-8 w-96">
+        <p class="text-sm text-slate-400 mb-4">Click on the button, and login to your EpicGames account, <span class="text-indigo-600 font-semibold">confirm</span>, and return in this page.</p>
+        <a class="p-4 px-8 bg-gray-800 text-white font-semibold rounded-md cursor-pointer flex gap-4 items-center" id="login-btn">
+            <img class="w-6 hidden" id="init" src="/asset/epic.png">
+            <i class="fa-duotone fa-spinner-third animate-spin" id="load"></i>
+            <p id="login-text">Login</p>
+        </a>
+    </section>
+
+    <footer class="fixed bottom-3 right-10 text-gray-300 font-semibold">EpicLogin by BlueRed</footer>
+</body>
+</html>
