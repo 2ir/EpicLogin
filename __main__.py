@@ -106,7 +106,7 @@ def update_db() -> None:
     try:
         db_ = loads(db_init)
     except JSONDecodeError:
-        pass
+        db_ = db
 
     if all(key in db_ for key in ['clients', 'auths']):
         db = db_
